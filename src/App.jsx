@@ -1,11 +1,9 @@
-function App() {
-  return (
-    <div>
-      <h1>Welcome to My React App! 🚀</h1>
-      <p>Let's build something awesome.</p>
-      <p>Let's update. </p>
-    </div>
-  );
-}
+import React from "react";
+import ReactDOM from "react-dom/client";
 
-export default App;
+const Heading = () => {
+  return <h1 id="heading">Hello world from React app!</h1>;
+};
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(<Heading />);
